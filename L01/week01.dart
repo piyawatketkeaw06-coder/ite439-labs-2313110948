@@ -62,17 +62,17 @@ String bmi(double weight, double height) {
 // ------------------------------------------------------------
 String average(List<int> numbers) {
   // TODO
-  return '';
+  return (numbers.reduce((a, b) => a + b) / numbers.length).toStringAsFixed(2);
 }
 
 int highest(List<int> numbers) {
   // TODO
-  return 0;
+  return numbers.reduce((a, b) => a > b ? a : b);
 }
 
 int lowest(List<int> numbers) {
   // TODO
-  return 0;
+  return numbers.reduce((a, b) => a < b ? a : b);
 }
 
 // ------------------------------------------------------------
